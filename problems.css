@@ -1,0 +1,514 @@
+*{
+    font-family: 'Montserrat',regular;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgb(139, 210, 254) 100%); */
+    background: linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(226, 83, 255, 0.4) 100%);
+    /* background-attachment: fixed; */
+}
+
+
+/* heading */
+.heading-container{
+    padding:2em  2em 2em 6em;
+}
+.heading-l{
+    font-size: 6em;
+    font-weight: 600;
+
+    background: rgb(119,73,240);
+    background: linear-gradient(60deg, rgba(119,73,240,1) 0%, rgba(233,19,245,1) 100%);
+    
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.heading-m{
+    font-size: 4em;
+    font-weight: 400;
+    padding-left: 1.5em;
+}
+.heading-s{
+    font-weight: 400;
+    font-size: 2em;
+}
+.heading-m-container{
+    margin-top: 1vh;
+}
+.top-padding-l{
+    padding-top: 4vh;
+}
+.top-padding-s{
+    padding-top: 3vh;
+}
+
+
+/* Problems container */
+.problems-container{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(205,132,255,0.3) 100%);
+    background-attachment: fixed;
+    margin: 5vh 5vw;
+    padding: 5vh 5vw;
+    border-radius: 2vh;
+}
+
+.problem{
+    transition: 0.5s;
+    display: grid;
+    /* justify-content: space-between; */
+    margin: 0.5vh 5vw;
+    border-radius: 1vh;
+    padding: 1vh 5vw;
+    align-items: center;
+    background: rgb(205,132,255);
+    background: linear-gradient(90deg, rgba(206, 132, 255, 0.15) 0%, rgba(255,255,255,0) 75%);
+}
+
+.problem:hover{
+    background: linear-gradient(90deg, rgba(195, 106, 255, 0.35) 30%, rgba(255,255,255,0) 100%);
+}
+
+.flag{
+    grid-column-start:1 ;
+    grid-column-end:2 ;
+    width: 1.5vw;
+}
+.flag:hover{
+    cursor:pointer;
+}
+.problem-name{
+    grid-column-start:2 ;
+    grid-column-end:5 ;
+    font-size: 2.5vh;
+    font-weight: 500;
+    text-align:left;
+    width: 30vw;
+}
+.problem-name:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.problem-name:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.problem-name:hover {
+    color: black;
+    background-color: transparent;
+}
+.problem-name :active {
+    color: black;
+    background-color: transparent;
+}
+
+.difficulty{
+    grid-column-start:5 ;
+    grid-column-end:6 ;
+    
+    font-weight: 800;
+    text-align: center;
+    text-transform:capitalize;
+    border-radius: 1vw;
+    padding: 1.5vh 2vw;
+    width: 8vw;
+}
+
+.easy{
+    color: rgb(24, 223, 2);
+}
+.medium{
+    color: rgb(255, 192, 67);
+}
+.hard{
+    color: rgb(255, 28, 28);
+}
+
+.done{
+    transform: scale(85%);
+    background: rgb(163,255,132);
+    background: linear-gradient(90deg, rgba(163,255,132,0.4) 0%, rgba(204, 255, 187, 0.4) 100%);
+
+}
+.done > .problem-name{
+    font-weight: 300;
+}
+.done:hover{
+    background: rgb(163,255,132);
+    background: linear-gradient(90deg, rgba(163,255,132,0.8) 0%, rgba(204, 255, 187, 0.8) 100%);
+}
+.done-ease{
+    transform: scale(90%);
+    background: rgb(163,255,132);
+    background: linear-gradient(90deg, rgba(163,255,132,0.8) 0%, rgba(204, 255, 187, 0.8) 100%);
+}
+.done-medium{
+    transform: scale(90%);
+    background: rgb(253,246,115);
+    background: linear-gradient(90deg, rgb(255, 249, 139, 0.8) 0%, rgba(255,252,196,0.8) 100%);
+}
+.done-hard{
+    transform: scale(90%);
+    background: rgb(255,77,77);
+    background: linear-gradient(90deg, rgba(255,77,77,0.8) 0%, rgba(255,196,196,0.8) 100%);
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    body{
+         /* background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgb(254, 139, 191) 100%); */
+         padding: 0;
+    }
+
+    
+    .heading-container{
+        padding: 10vh  3vh 3vh 5vw;
+    }
+    .top-padding-l{
+        padding-top: 4vh;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    .top-padding-s{
+        padding-top: 2vh;
+    }
+    .heading-l{
+        font-size: 5em;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .heading-m-container{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .heading-m{
+        font-size: 2em;
+    }
+    .heading-s{
+        font-size: 1.5em;
+    }
+    
+   /* Problems container */
+    .problems-container{
+        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(205,132,255,0.3) 100%);
+        background-attachment: fixed;
+        margin: 5vh 5vw;
+        padding: 5vh 5vw;
+        border-radius: 2vh;
+    }
+
+    .problem{
+        transition: 0.5s;
+        display: grid;
+        column-gap: 1vw;
+        margin: 0.5vh 5vw;
+        border-radius: 1vh;
+        padding: 1vh 5vw;
+        align-items: center;
+        background: rgb(205,132,255);
+        background: linear-gradient(90deg, rgba(206, 132, 255, 0.15) 0%, rgba(255,255,255,0) 75%);
+    }
+
+    .flag{
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        width: 2.5vw;
+    }
+
+
+    .problem-name{
+        grid-column-start:2 ;
+        grid-column-end:5 ;
+        font-size: 3vh;
+        font-weight: 500;
+    }
+    .done{
+        transform: scale(85%);
+        background: rgb(163,255,132);
+        background: linear-gradient(90deg, rgba(163,255,132,0.4) 0%, rgba(204, 255, 187, 0.4) 100%);
+    
+    }
+    
+
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+         /* background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgb(254, 139, 191) 100%); */
+         padding: 0;
+    }
+
+
+    
+    .heading-container{
+        padding: 10vh  3vh 3vh 5vw;
+    }
+    .top-padding-l{
+        padding-top: 4vh;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    .top-padding-s{
+        padding-top: 2vh;
+    }
+    .heading-l{
+        font-size: 5em;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .heading-m-container{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .heading-m{
+        font-size: 2em;
+    }
+    .heading-s{
+        font-size: 1.5em;
+    }
+    
+    /* Problems container */
+    .problems-container{
+        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(205,132,255,0.3) 100%);
+        background-attachment: fixed;
+        margin: 5vh 5vw;
+        padding: 5vh 5vw;
+        border-radius: 2vh;
+    }
+
+    .problem{
+        transition: 0.5s;
+        display: grid;
+        margin: 0.5vh 5vw;
+        border-radius: 1vh;
+        padding: 1vh 5vw;
+        align-items: center;
+        background: rgb(205,132,255);
+        background: linear-gradient(90deg, rgba(206, 132, 255, 0.15) 0%, rgba(255,255,255,0) 75%);
+    }
+
+    .flag{
+        grid-column-start:1 ;
+        grid-column-end:2 ;
+        width: 2.5vw;
+    }
+
+    .problem-name{
+        grid-column-start:2 ;
+        grid-column-end:5 ;
+        font-size: 3vh;
+        font-weight: 500;
+    }
+    .done{
+        transform: scale(85%);
+        background: rgb(163,255,132);
+        background: linear-gradient(90deg, rgba(163,255,132,0.4) 0%, rgba(204, 255, 187, 0.4) 100%);
+    
+    }
+
+
+}
+
+@media only screen and (max-width: 580px) {
+    body{
+         /* background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgb(149, 139, 254) 100%); */
+         padding: 0;
+    }
+
+
+    
+    .heading-container{
+        padding: 10vh  3vh 3vh 5vw;
+    }
+    .top-padding-l{
+        padding-top: 4vh;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    .top-padding-s{
+        padding-top: 2vh;
+    }
+    .heading-img{
+        opacity: 0;
+    }
+    .heading-l{
+        font-size: 4em;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .heading-m-container{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .heading-m{
+        font-size: 2em;
+    }
+    .heading-s{
+        font-size: 1.25em;
+    }
+    
+    
+    /* list of topics */
+    .problems-container{
+        margin: 5vh 5vw;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(205,132,255,0.3) 100%);
+        background-attachment: fixed;
+        border-radius: 2vh;
+        padding: 5vh 5vw;
+    }
+    .problem{
+        margin: 0.5vh 5vw;
+        border-radius: 1vh;
+        padding: 1vh 5vw;
+        align-items: center;
+    }
+    
+    .flag{
+        width: 3vw;
+    }
+    
+    .problem-name{
+        font-size: 3vw;
+        font-weight: 500;
+    }
+
+    
+    .difficulty{       
+        font-size: 2.5vw;
+        font-weight: 800;
+        text-align: center;
+        text-transform:capitalize;
+        border-radius: 1vw;
+        padding: 1.5vh 2vw;
+        width: 8vw;
+    }
+    .done{
+        transform: scale(85%);
+        background: rgb(163,255,132);
+        background: linear-gradient(90deg, rgba(163,255,132,0.4) 0%, rgba(204, 255, 187, 0.4) 100%);
+    
+    }
+
+
+}
+
+@media only screen and (max-width: 320px) {
+    body{
+         /* background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgb(236, 169, 255) 100%); */
+         padding: 0;
+    }
+
+    
+    .heading-container{
+        padding: 10vh  3vh 3vh 7vw;
+    }
+    .top-padding-l{
+        padding-top: 4vh;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    .top-padding-s{
+        padding-top: 1vh;
+    }
+    .heading-img{
+        opacity: 0;
+        
+    }
+    .heading-l{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        font-size: 3em;
+    }
+    .heading-m-container{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .heading-m{
+        font-size: 1.55em;
+    }
+    .heading-s{
+        font-size: 1em;
+    }
+
+
+    /* list of topics */
+    .problems-container{
+        margin: 5vh 5vw;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(205,132,255,0.3) 100%);
+        background-attachment: fixed;
+        border-radius: 2vh;
+        padding: 5vh 5vw;
+    }
+    .problem{
+        margin: 0.5vh 5vw;
+        border-radius: 1vh;
+        padding: 1vh 5vw;
+        align-items: center;
+    }
+    
+    .flag{
+        width: 3vw;
+    }
+    
+    .problem-name{
+        font-size: 3.5vw;
+        font-weight: 500;
+    }
+
+    
+    .difficulty{       
+        font-size: 2.5vw;
+        font-weight: 800;
+        text-align: center;
+        text-transform:capitalize;
+        border-radius: 1vw;
+        padding: 1.5vh 2vw;
+        width: 8vw;
+    }
+    .done{
+        transform: scale(85%);
+        background: rgb(163,255,132);
+        background: linear-gradient(90deg, rgba(163,255,132,0.4) 0%, rgba(204, 255, 187, 0.4) 100%);
+    }
+
+
+}
+

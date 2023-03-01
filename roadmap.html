@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Montserrat  -->
+    <!-- https://fonts.google.com/specimen/Montserrat?preview.text=Can%E2%80%99t%20find&preview.text_type=custom -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="roadMap.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navBar.css">
+    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="footer.css"">
+    
+    <!-- link js -->
+    <script type="module" defer src="roadMap.js"></script>
+    <script type="module" defer src="navBar.js"></script>
+ 
+    <title>Roadmap</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <header class="navBar">
+        <div class="topnav">
+            <a href="#" class="toHomeLink">Cadre</a>
+        </div>
+        <div class="navLink">
+            <button class="roadMapBtn navBtn activeBtn">RoadMap</button>
+            <button class="problemsBtn navBtn">Problems</button>
+            <button class="contactBtn navBtn">Contact</button>
+        </div>
+    </header>
+    <!---->
+
+    <!-- about me -->
+    <section class="behind-pop-up hidden ">
+        <p class="b-pop-m"> click outside to close</p>
+    </section>
+   
+    <section class="c-pop-up  hidden ">
+        <span class="c-heading" >"Hello World"</span>
+
+        <div class="c-subHeading">
+            <p class="c-pop-m">I'm Ekansh Sharma ,</p>
+            <p class="c-pop-s">from India and currently pursuing engineering</p>
+        </div>
+
+        <p class="c-text">If you want to suggest or find any bug, feel free to contact me that help us to grow and become better version of ourself</p>
+
+
+        <div class="c-icon-container">
+            <div class="c-icon-vertical-center">
+
+            <ul class="c-foot-icons">
+
+                <a href="https://leetcode.com/ekansh88/" target="_blank">
+                    <img src="Design/leetcode_icon.png" alt="footer-icon" class="c-foot-icon">
+                </a>
+
+                
+                <a href="https://www.linkedin.com/in/ekanshx88/" target="_blank">
+                <img src="Design/linkedIn_icon.png" alt="footer-icon" class="c-foot-icon">
+                </a>
+                
+                <a href="https://www.instagram.com/ekansh2003/" target="_blank">
+                    <img src="Design/instagram.png" alt="footer-icon" class="c-foot-icon">
+                </a>
+
+                <a href="mailto:ekanshx88@gmail.com" target="_blank">
+                    <img src="Design/mail.png" alt="footer-icon" class="c-foot-icon">
+                </a>     
+
+            </ul>
+
+            </div>
+        </div>
+
+    </section>
+    <!---->
+
+
+    <div class="heading-container">
+        
+        <!-- <img src="/Design/TLE.png" alt="" class="heading-img"> -->
+        <p class="heading-l" >Roadmap</p>
+
+        <div class="heading-m-container">
+            <p class="heading-m">Here are the main topics</p>
+            <p class="heading-m">of Data Structures</p>
+        </div>
+
+        <div class="top-padding-l">
+          <p class="heading-s top-padding-l">So, let's explore and improve together</p>
+          <p class="heading-s top-padding-s">if you are studing a particular topic , just click that topic </p>
+          <p class="heading-s">and you will move to the related problems of that data structure </p>
+        </div>  
+
+    </div>
+
+
+    <ul class="lists">
+        <div class="topic">
+            <h3 class="name-topic">Array</h3>
+            <p class="about-topic">An Array is a linear data structure that collects elements of the same data type and stores them in contiguous and adjacent memory locations. Arrays work on an index system starting from 0 to (n-1), where n is the size of the array.</p>
+            <div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h3 class="name-topic">String</h3>
+            <p class="about-topic">String is generally considered as a data type and is often implemented as an array data structure of bytes (or words) that stores a sequence of elements, typically characters, using some character encoding.</p>
+            <div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        
+        <div class="soon">
+            
+            <div class="topic">
+                <h3 class="name-topic">Hash Table</h3>
+                <p class="about-topic">In a Hash Table, data is stored in an array format, where each data value has its own unique index value. Access of data becomes very fast if we know the index of the desired data.</p>
+                <div class="solve-topic">
+                    <span class="done-topic">2</span>
+                    <span>/</span>
+                    <span class="problems-topic">23</span>
+                </div>
+            </div>
+
+            <!-- <h31 class="inactive-text">Soon Available</h31> -->
+
+        </div>
+
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Two Pointer</h3>
+            <p class="about-topic">Two Pointer is an approach in which we search a particular subarray that is satisfy the problem. It's much effective that a Brute / Naive approach.</p>
+            <div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Sliding Window</h3>
+            <p class="about-topic">Sliding Window is a technique which aims to reduce the use of nested loop and replace it with a single loop, thereby reducing the time complexity.</p>
+            <div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Binary Search</h3>
+            <p class="about-topic">This is an effective search method that find the index of target number in an array. It have advantage over linear search method as it's TC - O(log n) but array must be in sorted fashion.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Stack</h3>
+            <p class="about-topic">Stack is an linear data structure which follows a particular order in which the operations are performed. The order is LIFO (Last In First Out).</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Queue</h3>
+            <p class="about-topic">Queue is an linear data structure that is open at both ends and the operations are performed in First In First Out FIFO (First In First Out) order.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Depth First Search</h3>
+            <p class="about-topic">Depth First Search is a recursive traversal algorithm for searching all the vertices of a matrix , tree or graph data structure. It starts from the first node of graph G and then goes to further vertices until the goal vertex is reached.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Linked List</h3>
+            <p class="about-topic">Linked List is a linear data structure, in which the elements are not stored at contiguous memory locations. The elements in a linked list are linked using pointers.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Breadth First Search</h3>
+            <p class="about-topic">Breadth First Search is an algorithm in which we traverse the matrix, tree or graph data structure by using queue, it remember the next point to start a search, when a dead end occurs in any iteration.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Tree</h3>
+            <p class="about-topic">Tree is a hierarchical data structure defined as a collection of nodes. Nodes represent value and nodes are connected by edges. It have a root and have nodes, every node have a parent node except root node.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+ 
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Tries</h3>
+            <p class="about-topic">Tries are an extremely special and useful hierarchical data structure that are based on the prefix of a string. It work similar as tree.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Heap / Priority Queue</h3>
+            <p class="about-topic">A Heap is a special Tree-based data structure in which the tree is a complete binary tree where the root-node key is compared with its children and arranged accordingly.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Recursion</h3>
+            <p class="about-topic">Recursion is way in which a function calls itself indirectly or directly, It's generally used when the answer to a larger problem could be divide in terms of smaller problems.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        
+
+        
+
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Back Tracking</h3>
+            <p class="about-topic">Backtracking is an algorithmic technique for solving problems recursively by trying to build a solution incrementally, one piece at a time, removing those solutions that fail to satisfy the constraints of the problem at any point of time.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+        <div class="topic ">
+            <h3 class="name-topic">Graph</h3>
+            <p class="about-topic">A Graph is a non-linear data structure consisting of vertices and edges. Each vertex could be connect to multiple vertex with the help of edge.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Advanced Graph</h3>
+            <p class="about-topic">Advanced Graph is nothing but graph but in this we do hard problems on graph. This section is good for you if you want to go more with graph.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">1-D Dynamic Programming</h3>
+            <p class="about-topic">Dynamic programming is a technique that is used to optimize the time complexity of a solution by tabulating and storing results of previous computations. In this we go through 1-D DP.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">2-D Dynamic Programming</h3>
+            <p class="about-topic">In this we go through advance DP problems that uses 2-D or more dimension storing technique. We will solve more tricky problems here.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Greedy</h3>
+            <p class="about-topic">Greedy approach is best suited when we want an immediate situation. It pick a solution that seems the best at the moment.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+        <div class="topic inactive-topic">
+            <h3 class="name-topic">Math & Geometry</h3>
+            <p class="about-topic">In this we focuse more on math rather than data structure and algorithm. You must have a basic knowledge of math and geometry.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div><div class="topic inactive-topic">
+            <h3 class="name-topic">Bit manupulation</h3>
+            <p class="about-topic">Bit manipulation is the process of applying logical operations on a sequence of bits to achieve a required result.</p><div class="solve-topic">
+                <span class="done-topic">2</span>
+                <span>/</span>
+                <span class="problems-topic">23</span>
+            </div>
+        </div>
+
+    </ul>
+
+
+    <footer class="info-box">
+
+        <div class="icon-container">
+          <div class="icon-vertical-center">
+            <ul class="foot-icons">
+              <a href="https://leetcode.com/ekansh88/" target="_blank">
+                  <img src="Design/leetcode_icon.png" alt="footer-icon" class="foot-icon">
+              </a>
+              <a href="https://www.linkedin.com/in/ekanshx88/" target="_blank">
+                  <img src="Design/linkedIn_icon.png" alt="footer-icon" class="foot-icon">
+              </a>
+              <a href="https://www.instagram.com/ekansh2003/" target="_blank">
+                  <img src="Design/instagram.png" alt="footer-icon" class="foot-icon">
+              </a>
+              <a href="mailto:ekanshx88@gmail.com" target="_blank">
+                  <img src="Design/mail.png" alt="footer-icon" class="foot-icon">
+              </a>            
+            </ul>
+          </div>
+        </div>
+        <!-- <p class="foot-text">Website under BETA state</p> -->
+        <p class="foot-text">Made with 💝 by Ekansh Shama</p>
+        <p class="top-padding-s"></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+.navBar{
+    display: grid;
+    padding: 2vh 3vw;
+    border-color: rgb(40, 36, 31);
+    
+    box-shadow: 0 1px 10px rgba(98, 9, 116, 0.655);
+    /* justify-content: space-around; */
+    justify-content: space-between;
+}
+.topnav{
+    /* display: flex; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* padding: 0vh 2vw; */
+    font-size: 3.5vw;
+
+}
+.navLink{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: grid;
+    /* align-items: end; */
+    justify-content: start;
+    column-gap: 2vw;
+    
+}
+.navBtn{
+    font-size: 1.5vw;
+    font-weight: 500;
+    background-color: transparent;
+    border: 0;
+}
+.roadMapBtn{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: #9733EE;
+}
+.roadMapBtn:hover{
+    transition: 0.2s;
+    transform:translate(0px, -5px);
+    font-weight: 600;
+    cursor: pointer;
+}
+.problemsBtn{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    color: #9733EE;
+}
+.problemsBtn:hover{
+    transition: 0.2s;
+    transform:translate(0px, -5px);
+    font-weight: 600;
+    cursor: pointer;
+}
+.contactBtn{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    color: #DA22FF;
+}
+.contactBtn:hover{
+    transition: 0.2s;
+    transform:translate(0px, -5px);
+    font-weight: 600;
+    cursor: pointer;
+}
+.toHomeLink{ 
+    padding: 1rem  0 0 0 ;
+    font-weight: 600;
+
+    text-decoration: none;
+    background: rgb(119,73,240);
+    background: linear-gradient(45deg, rgba(119,73,240,1) 0%, rgba(233,19,245,1) 100%);
+    
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+}
+.toHomeLink:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.toHomeLink:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.toHomeLink:hover {
+    color: black;
+    background-color: transparent;
+}
+.toHomeLink :active {
+    color: black;
+    background-color: transparent;
+}
+.activeBtn{
+    font-weight: 800;
+    transform:translate(0px, -10px);
+    border-bottom: 2px solid #9733EE;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    body{
+         /* background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgb(254, 139, 191) 100%); */
+         padding: 0;
+    }
+
+    .navBar{
+        /* padding: 1vh 2vw 0vh 2vw; */
+        padding: 2vw 8vh;
+    }
+    /* .topnav{
+        padding: 0vh 2vw 0vh 0 ;
+    } */
+    .toHomeLink{
+        font-size: 5vw ;
+    }
+    .navLink{
+        column-gap: 2vw;
+        
+    }
+    .navBtn{
+        font-size: 2vw;
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    .navBar{
+        padding: 4vw;
+    }
+    .toHomeLink{
+        font-size: 6vw ;
+    }
+    .navLink{
+        column-gap: 2vw;
+        
+    }
+    .navBtn{
+        font-size: 2.75vw;
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width: 580px) {
+
+
+    .navBar{
+        padding: 4vw;
+    }
+
+    .toHomeLink{
+        font-size: 8vw ;
+    }
+    .navLink{
+        column-gap: 2vw;
+        
+    }
+    .navBtn{
+        font-size: 3.7vw;
+        font-weight: 600;
+    }
+
+
+}
+@media only screen and (max-width: 320px) {
+
+    .navBar{
+        padding: 4vw;
+    }
+
+    .toHomeLink{
+        font-size: 8vw ;
+    }
+    .navLink{
+        column-gap: 2vw;
+        
+    }
+    .navBtn{
+        font-size: 3.7vw;
+        font-weight: 600;
+    }
+}
